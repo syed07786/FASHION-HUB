@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech2etc Ecommerce Tutorial</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button-group .buy-now {
+            background-color: #ff4c4c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .button-group .add-to-cart {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/logo/logo (1).png" class="logo" alt="Company Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/saif1.webp" width="100%" id="MainImg" alt="Product Image">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/saif1.webp" width="100%" class="small-img" alt="Product Thumbnail 1">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/saif2(2).webp" width="100%" class="small-img" alt="Product Thumbnail 2">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/saif2.webp" width="100%" class="small-img" alt="Product Thumbnail 3">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/saif1(7).webp" width="100%" class="small-img" alt="Product Thumbnail 4">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / T-shirt</h6>
+            <h4>Men's Fashion T-Shirt</h4>
+            <h2>$139.00</h2>
+            <select>
+                <option>Select size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>SMALL</option>
+                <option>LARGE</option>
+            </select>
+            <input type="number" value="1">
+            <div class="button-group">
+                <!-- Add To Cart button -->
+                <form action="cart.html" method="GET" style="display: inline;">
+                    <input type="hidden" name="product" value="Men's Fashion T-Shirt">
+                    <input type="hidden" name="price" value="$139.00">
+                    <button type="submit" class="add-to-cart">Add To Cart</button>
+                </form>
+
+                <!-- Buy Now button -->
+                <form action="buy.php" method="POST" style="display: inline;">
+                    <input type="hidden" name="product" value="Men's Fashion T-Shirt">
+                    <input type="hidden" name="price" value="$139.00">
+                    <button type="submit" class="buy-now">Buy Now</button>
+                </form>
+            </div>
+            <h4>Product Details</h4>
+            <span>The Gildan Ultra Cotton T-shirt is made in Hyderabad, India. The fabric is 100% cotton, designed by professionals Syed Akif Ali and Shanawaz. It's a top design from the leading branding company in India, with high demand in Bollywood.</span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Feature Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/products/n1.jpg" alt="Product 1">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <!-- Repeat the above block for each product -->
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for Newsletters</h4>
+            <p>Get E-mail updates about the latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo/logo (1).png" alt="Company Logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 526 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone:</strong> +91 9848205122 / +91 9059965264</p>
+            <p><strong>Hours:</strong> 10:00am - 4:00pm, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="App Store">
+                <img src="img/pay/play.jpg" alt="Google Play">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="Payment Methods">
+        </div>
+        <div class="copyright">
+            <p>© 2024, SYED AKIF ALI, MD SHANAWAZ - HTML CSS E-COMMERCE WEBSITE</p>
+        </div>
+    </footer>
+
+    <script>
+        // Handle image switching
+        document.querySelectorAll('.small-img').forEach((img, index) => {
+            img.addEventListener('click', () => {
+                document.getElementById('MainImg').src = img.src;
+            });
+        });
+
+        // Responsive Navbar Toggle
+        const bar = document.getElementById('bar');
+        const nav = document.getElementById('navbar');
+        const close = document.getElementById('close');
+
+        if (bar) {
+            bar.addEventListener('click', () => {
+                nav.classList.add('active');
+            });
+        }
+
+        if (close) {
+            close.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        }
+    </script>
+</body>
+
+</html>
